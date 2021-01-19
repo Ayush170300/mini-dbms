@@ -1,7 +1,7 @@
 import "../App.css"
 function Tablehead(){
     const sty={fontWeight:"bolder",fontSize:"37px", color:"blue"}
-    return <div className="datarow"  >
+    return <div className="datarow"   style={{backgroundColor:"pink"}}>
     
       <span style={sty}>FULL NAME</span>
       <span  style={sty}>MOBILE NO.</span>
@@ -14,6 +14,7 @@ function Tablehead(){
       <span   style={sty}>END DATE</span>
       <span  style={sty}>BILL AMOUNT</span>
       <span  style={sty}>STATUS</span>
+      <span  style={sty}></span>
       <span  style={sty}></span>
       </div>
 }

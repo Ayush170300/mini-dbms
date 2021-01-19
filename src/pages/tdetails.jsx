@@ -54,7 +54,7 @@ function Tdetails(){
       }
        
 
-     return <div style={{backgroundImage: "url("+img+")",width:"100vb",height:"100vh"}}>
+     return <div style={{backgroundImage: "url("+img+")",width:"100%",height:"100%",position:"absolute",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
         <Header h="TRAVEL DETAILS" />
      <div className="Pbox"  >
       <form method="post" autoComplete="off">
@@ -65,7 +65,7 @@ function Tdetails(){
         <Button variant="contained" color="secondary" class="Buttonform" onClick={handleClick}>End Trip</Button>
         <Button variant="contained" color="secondary" class="Buttonform">View Records</Button>
         </form>
-        <Snackbar class="Snackbar" open={open} autoHideDuration={6000} onClose={handleClose}>
+        <Snackbar style={{zoom:"200%"}} class="Snackbar" open={open} autoHideDuration={6000} onClose={handleClose}>
         <Alert onClose={handleClose} severity="success">
           Trip Ended!
         </Alert>

@@ -50,11 +50,11 @@ Datarows(data1,0,0);
   
 Datarows(data2,1,data1.length);
     
-  return <div>
+  return <div >
              
              { bill?<Bill change={Change}  data={billdata} />:null}
              <Tablehead />
-            <div className="records" style={{overflowY:'scroll', maxHeight:'98vh'}} >
+            <div className="records" style={{overflowY:'scroll', maxHeight:'220vh'}} >
            {l1.map(element=>element)}
           </div>
         
